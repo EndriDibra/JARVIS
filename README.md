@@ -11,4 +11,4 @@ Questions / Keywords:
 
 Or you can ask in a different way your questions, but you should contain inside the phrase the above keywords!
 For Example:
-What time is it? , Go for social media , You can exit now
+What time is it? , Go for social media , You can exit now.
