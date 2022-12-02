@@ -1,5 +1,5 @@
 # JARVIS
-This is a Python program, that creates an AI voice based assistant ["JARVIS"].
+This is a Python program, that creates an AI voice assistant ["JARVIS"].
 The user can ask some predefined questions JARVIS.
 Questions / Keywords:
 1. "how are you"
