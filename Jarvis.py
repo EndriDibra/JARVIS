@@ -1,6 +1,7 @@
 # Author: Endri Dibra
 
 # importing the required libraries
+import time
 import datetime
 import webbrowser as wb
 import pyttsx3
@@ -73,7 +74,6 @@ def takecommand():
         command = recognize.recognize_google(audio, language='en-uk')
         print(f'User said: {command}\n')
 
-
     # in case that our AI assistant did not
     # understand our command (audio input)
     except Exception as e:
@@ -101,10 +101,16 @@ if __name__ == '__main__':
 
             speak("I am fine thanks!, enjoy your time")
 
+            print("What's the next question ?")
+            speak("What's the next question ?")
+
 
         elif 'are you there' in command:
 
             speak("Yes! At your service !")
+
+            print("What's the next question ?")
+            speak("What's the next question ?")
 
 
         elif 'time' in command:
@@ -118,6 +124,9 @@ if __name__ == '__main__':
 
             print("Time: ", current_time)
             speak(f'The time right now is {current_time}')
+
+            print("What's the next question ?")
+            speak("What's the next question ?")
 
 
         elif 'social media' in command:
@@ -135,6 +144,12 @@ if __name__ == '__main__':
 
                 wb.open(f"https://www.{platform}.com/")
 
+                # waiting for 2.5 seconds
+                time.sleep(2.5)
+
+                print("What's the next question ?")
+                speak("What's the next question ?")
+
 
         elif 'weather' in command:
 
@@ -151,6 +166,13 @@ if __name__ == '__main__':
 
                 speak(f"Opening weather for {city_name}")
                 wb.open(f'https://www.google.com/search?q={city_name}+temperature&as_qdr=all&sxsrf=ALiCzsZtvVobJTpKrWFGnsmE04k9mhpo7g%3A1661279009148&source=hp&ei=IRsFY_CeBcC_xc8P1u6t4Ao&iflsig=AJiK0e8AAAAAYwUpMUZ8SsbJpL7Yv1Jp-XRwzM7KX5N8&oq=athens+te&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQywEyCwguEIAEEMcBEK8BMgUIABDLATIFCAAQgAQyBQgAEMsBMgsILhDHARCvARDLATILCC4QxwEQrwEQywEyBQgAEMsBMgUIABDLATILCC4QgAQQxwEQrwE6BAguECc6BAgjECc6EQguEIAEELEDEIMBEMcBENEDOgsILhCABBCxAxCDAToLCAAQgAQQsQMQgwE6DgguEIAEELEDEMcBENEDOgoIABCxAxCDARBDOgQIABBDOgcILhDUAhBDOgQILhBDOg0ILhCxAxCDARDUAhBDOhQILhCABBCxAxCDARDHARDRAxDUAlAAWO4aYOwnaABwAHgAgAHQAYgBwguSAQUwLjguMZgBAKABAQ&sclient=gws-wiz')
+
+                # waiting for 2.5 seconds
+                time.sleep(2.5)
+
+                print("What's the next question ?")
+                speak("What's the next question ?")
+
 
         elif 'exit' in command:
 
